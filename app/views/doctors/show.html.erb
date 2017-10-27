@@ -1,7 +1,7 @@
 Doctor: <%= @doctor.name %>
 Department: <%= @doctor.department %>
 
-Appointment: <%= @doctor.appointment.each do |apt| %>
+Appointment: <%= @doctor.appointment_time.each do |apt| %>
 <%= apt.date_time.strftime("%B %d, %Y at %H:%M")%>
 
 <% end %>
